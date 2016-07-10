@@ -1,0 +1,540 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		385858271D31DFF200F3A597 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 385858261D31DFF200F3A597 /* main.m */; };
+		3858582A1D31DFF200F3A597 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 385858291D31DFF200F3A597 /* AppDelegate.m */; };
+		3858582D1D31DFF200F3A597 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3858582C1D31DFF200F3A597 /* ViewController.m */; };
+		385858321D31DFF200F3A597 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 385858311D31DFF200F3A597 /* Assets.xcassets */; };
+		385858351D31DFF200F3A597 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 385858331D31DFF200F3A597 /* LaunchScreen.storyboard */; };
+		385858401D31DFF200F3A597 /* JKLoginMVVMDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3858583F1D31DFF200F3A597 /* JKLoginMVVMDemoTests.m */; };
+		38CB588D1D31E17800139DF3 /* JKLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 38CB588C1D31E17800139DF3 /* JKLoginViewModel.m */; };
+		38CB58901D31E18300139DF3 /* JKUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 38CB588F1D31E18300139DF3 /* JKUser.m */; };
+		38CB58941D31E5B300139DF3 /* JKUserAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 38CB58931D31E5B300139DF3 /* JKUserAPI.m */; };
+		8FD8BC3D3ACE3B2F3FFE5F71 /* libPods-JKLoginMVVMDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1E3226C41AE83CCB29317EE /* libPods-JKLoginMVVMDemo.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3858583C1D31DFF200F3A597 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3858581A1D31DFF200F3A597 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 385858211D31DFF200F3A597;
+			remoteInfo = JKLoginMVVMDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		019C4337AB9ECD9E1229FF3F /* Pods-JKLoginMVVMDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKLoginMVVMDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JKLoginMVVMDemo/Pods-JKLoginMVVMDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		2DC5A82213F780E5E9F7FB51 /* Pods-JKLoginMVVMDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKLoginMVVMDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-JKLoginMVVMDemo/Pods-JKLoginMVVMDemo.release.xcconfig"; sourceTree = "<group>"; };
+		385858221D31DFF200F3A597 /* JKLoginMVVMDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JKLoginMVVMDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		385858261D31DFF200F3A597 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		385858281D31DFF200F3A597 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		385858291D31DFF200F3A597 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3858582B1D31DFF200F3A597 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3858582C1D31DFF200F3A597 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		385858311D31DFF200F3A597 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		385858341D31DFF200F3A597 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		385858361D31DFF200F3A597 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3858583B1D31DFF200F3A597 /* JKLoginMVVMDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JKLoginMVVMDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3858583F1D31DFF200F3A597 /* JKLoginMVVMDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKLoginMVVMDemoTests.m; sourceTree = "<group>"; };
+		385858411D31DFF200F3A597 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38CB588B1D31E17800139DF3 /* JKLoginViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKLoginViewModel.h; sourceTree = "<group>"; };
+		38CB588C1D31E17800139DF3 /* JKLoginViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKLoginViewModel.m; sourceTree = "<group>"; };
+		38CB588E1D31E18300139DF3 /* JKUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKUser.h; sourceTree = "<group>"; };
+		38CB588F1D31E18300139DF3 /* JKUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKUser.m; sourceTree = "<group>"; };
+		38CB58921D31E5B300139DF3 /* JKUserAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKUserAPI.h; sourceTree = "<group>"; };
+		38CB58931D31E5B300139DF3 /* JKUserAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKUserAPI.m; sourceTree = "<group>"; };
+		A1E3226C41AE83CCB29317EE /* libPods-JKLoginMVVMDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JKLoginMVVMDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3858581F1D31DFF200F3A597 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FD8BC3D3ACE3B2F3FFE5F71 /* libPods-JKLoginMVVMDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		385858381D31DFF200F3A597 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		237AF93B82316C47A7074B23 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A1E3226C41AE83CCB29317EE /* libPods-JKLoginMVVMDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		385858191D31DFF200F3A597 = {
+			isa = PBXGroup;
+			children = (
+				385858241D31DFF200F3A597 /* JKLoginMVVMDemo */,
+				3858583E1D31DFF200F3A597 /* JKLoginMVVMDemoTests */,
+				385858231D31DFF200F3A597 /* Products */,
+				926FE72C59B2360F6AE20DB7 /* Pods */,
+				237AF93B82316C47A7074B23 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		385858231D31DFF200F3A597 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				385858221D31DFF200F3A597 /* JKLoginMVVMDemo.app */,
+				3858583B1D31DFF200F3A597 /* JKLoginMVVMDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		385858241D31DFF200F3A597 /* JKLoginMVVMDemo */ = {
+			isa = PBXGroup;
+			children = (
+				38CB58911D31E5A700139DF3 /* API */,
+				38CB588A1D31E16100139DF3 /* ViewModels */,
+				38CB58891D31E11100139DF3 /* Models */,
+				38CB58881D31E10B00139DF3 /* Views */,
+				385858281D31DFF200F3A597 /* AppDelegate.h */,
+				385858291D31DFF200F3A597 /* AppDelegate.m */,
+				385858311D31DFF200F3A597 /* Assets.xcassets */,
+				385858331D31DFF200F3A597 /* LaunchScreen.storyboard */,
+				385858361D31DFF200F3A597 /* Info.plist */,
+				385858251D31DFF200F3A597 /* Supporting Files */,
+			);
+			path = JKLoginMVVMDemo;
+			sourceTree = "<group>";
+		};
+		385858251D31DFF200F3A597 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				385858261D31DFF200F3A597 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3858583E1D31DFF200F3A597 /* JKLoginMVVMDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				3858583F1D31DFF200F3A597 /* JKLoginMVVMDemoTests.m */,
+				385858411D31DFF200F3A597 /* Info.plist */,
+			);
+			path = JKLoginMVVMDemoTests;
+			sourceTree = "<group>";
+		};
+		38CB58881D31E10B00139DF3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3858582B1D31DFF200F3A597 /* ViewController.h */,
+				3858582C1D31DFF200F3A597 /* ViewController.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		38CB58891D31E11100139DF3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				38CB588E1D31E18300139DF3 /* JKUser.h */,
+				38CB588F1D31E18300139DF3 /* JKUser.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		38CB588A1D31E16100139DF3 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				38CB588B1D31E17800139DF3 /* JKLoginViewModel.h */,
+				38CB588C1D31E17800139DF3 /* JKLoginViewModel.m */,
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
+		38CB58911D31E5A700139DF3 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				38CB58921D31E5B300139DF3 /* JKUserAPI.h */,
+				38CB58931D31E5B300139DF3 /* JKUserAPI.m */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		926FE72C59B2360F6AE20DB7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				019C4337AB9ECD9E1229FF3F /* Pods-JKLoginMVVMDemo.debug.xcconfig */,
+				2DC5A82213F780E5E9F7FB51 /* Pods-JKLoginMVVMDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		385858211D31DFF200F3A597 /* JKLoginMVVMDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 385858441D31DFF200F3A597 /* Build configuration list for PBXNativeTarget "JKLoginMVVMDemo" */;
+			buildPhases = (
+				07E45AD97070D4C469F198D2 /* 📦 Check Pods Manifest.lock */,
+				3858581E1D31DFF200F3A597 /* Sources */,
+				3858581F1D31DFF200F3A597 /* Frameworks */,
+				385858201D31DFF200F3A597 /* Resources */,
+				C069BE2FE512810BD079B31E /* 📦 Embed Pods Frameworks */,
+				1C4F843AE0D5AE17099876F5 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JKLoginMVVMDemo;
+			productName = JKLoginMVVMDemo;
+			productReference = 385858221D31DFF200F3A597 /* JKLoginMVVMDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3858583A1D31DFF200F3A597 /* JKLoginMVVMDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 385858471D31DFF200F3A597 /* Build configuration list for PBXNativeTarget "JKLoginMVVMDemoTests" */;
+			buildPhases = (
+				385858371D31DFF200F3A597 /* Sources */,
+				385858381D31DFF200F3A597 /* Frameworks */,
+				385858391D31DFF200F3A597 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3858583D1D31DFF200F3A597 /* PBXTargetDependency */,
+			);
+			name = JKLoginMVVMDemoTests;
+			productName = JKLoginMVVMDemoTests;
+			productReference = 3858583B1D31DFF200F3A597 /* JKLoginMVVMDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3858581A1D31DFF200F3A597 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Jayesh Kawli Backup";
+				TargetAttributes = {
+					385858211D31DFF200F3A597 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					3858583A1D31DFF200F3A597 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 385858211D31DFF200F3A597;
+					};
+				};
+			};
+			buildConfigurationList = 3858581D1D31DFF200F3A597 /* Build configuration list for PBXProject "JKLoginMVVMDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 385858191D31DFF200F3A597;
+			productRefGroup = 385858231D31DFF200F3A597 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				385858211D31DFF200F3A597 /* JKLoginMVVMDemo */,
+				3858583A1D31DFF200F3A597 /* JKLoginMVVMDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		385858201D31DFF200F3A597 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				385858351D31DFF200F3A597 /* LaunchScreen.storyboard in Resources */,
+				385858321D31DFF200F3A597 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		385858391D31DFF200F3A597 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		07E45AD97070D4C469F198D2 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1C4F843AE0D5AE17099876F5 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JKLoginMVVMDemo/Pods-JKLoginMVVMDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C069BE2FE512810BD079B31E /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JKLoginMVVMDemo/Pods-JKLoginMVVMDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3858581E1D31DFF200F3A597 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38CB58941D31E5B300139DF3 /* JKUserAPI.m in Sources */,
+				3858582D1D31DFF200F3A597 /* ViewController.m in Sources */,
+				3858582A1D31DFF200F3A597 /* AppDelegate.m in Sources */,
+				385858271D31DFF200F3A597 /* main.m in Sources */,
+				38CB588D1D31E17800139DF3 /* JKLoginViewModel.m in Sources */,
+				38CB58901D31E18300139DF3 /* JKUser.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		385858371D31DFF200F3A597 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				385858401D31DFF200F3A597 /* JKLoginMVVMDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3858583D1D31DFF200F3A597 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 385858211D31DFF200F3A597 /* JKLoginMVVMDemo */;
+			targetProxy = 3858583C1D31DFF200F3A597 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		385858331D31DFF200F3A597 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				385858341D31DFF200F3A597 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		385858421D31DFF200F3A597 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		385858431D31DFF200F3A597 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		385858451D31DFF200F3A597 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 019C4337AB9ECD9E1229FF3F /* Pods-JKLoginMVVMDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JKLoginMVVMDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jayeshKawli.JKLoginMVVMDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		385858461D31DFF200F3A597 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DC5A82213F780E5E9F7FB51 /* Pods-JKLoginMVVMDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JKLoginMVVMDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jayeshKawli.JKLoginMVVMDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		385858481D31DFF200F3A597 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = JKLoginMVVMDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jayeshKawli.JKLoginMVVMDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JKLoginMVVMDemo.app/JKLoginMVVMDemo";
+			};
+			name = Debug;
+		};
+		385858491D31DFF200F3A597 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = JKLoginMVVMDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jayeshKawli.JKLoginMVVMDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JKLoginMVVMDemo.app/JKLoginMVVMDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3858581D1D31DFF200F3A597 /* Build configuration list for PBXProject "JKLoginMVVMDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				385858421D31DFF200F3A597 /* Debug */,
+				385858431D31DFF200F3A597 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		385858441D31DFF200F3A597 /* Build configuration list for PBXNativeTarget "JKLoginMVVMDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				385858451D31DFF200F3A597 /* Debug */,
+				385858461D31DFF200F3A597 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		385858471D31DFF200F3A597 /* Build configuration list for PBXNativeTarget "JKLoginMVVMDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				385858481D31DFF200F3A597 /* Debug */,
+				385858491D31DFF200F3A597 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3858581A1D31DFF200F3A597 /* Project object */;
+}
