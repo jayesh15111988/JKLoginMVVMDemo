@@ -18,16 +18,11 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
-    
-    
     ViewController* vc = [[ViewController alloc] initWithViewModel:[[JKLoginViewModel alloc] init]];
     UINavigationController* nav = [[UINavigationController alloc] initWithRootViewController:vc];
     self.window.rootViewController = nav;
     self.window.bounds = [[UIScreen mainScreen] bounds];
-    [self.window makeKeyWindow];
     [self.window makeKeyAndVisible];
-    
     
     return YES;
 }

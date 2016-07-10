@@ -12,6 +12,7 @@
 
 @interface ViewController ()
 
+// Out loginViewModel. Initializing out ViewController with the viewModel.
 @property (nonatomic, strong) JKLoginViewModel* viewModel;
 @property (nonatomic, strong) UIActivityIndicatorView* activityIndicatorView;
 
@@ -33,6 +34,7 @@
     self.title = @"Login";
     self.view.backgroundColor = [UIColor whiteColor];
     
+    // An UIActivityIndicatorView which will begin animating while API request is in progress.
     self.activityIndicatorView = [[UIActivityIndicatorView alloc] init];
     self.activityIndicatorView.translatesAutoresizingMaskIntoConstraints = NO;
     self.activityIndicatorView.activityIndicatorViewStyle = UIActivityIndicatorViewStyleWhiteLarge;
@@ -40,6 +42,7 @@
     [self.activityIndicatorView setHidesWhenStopped:YES];
     [self.view addSubview:self.activityIndicatorView];
     
+    // Input fields. Viz. First and Last name.
     UITextField* firstNameField = [[UITextField alloc] init];
     firstNameField.translatesAutoresizingMaskIntoConstraints = NO;
     firstNameField.placeholder = @"First Name";
@@ -52,6 +55,7 @@
     lastNameField.borderStyle = UITextBorderStyleLine;
     [self.view addSubview:lastNameField];
     
+    // A login button associated with login screen.
     UIButton* loginButton = [[UIButton alloc] init];
     loginButton.translatesAutoresizingMaskIntoConstraints = NO;
     [loginButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
@@ -61,17 +65,20 @@
     loginButton.rac_command = _viewModel.loginButtonCommandAction;
     [self.view addSubview:loginButton];
     
+    // A label to show the details of logged in user.
     UILabel* loggedInUserDetails = [[UILabel alloc] init];
     loggedInUserDetails.translatesAutoresizingMaskIntoConstraints = NO;
     loggedInUserDetails.textAlignment = NSTextAlignmentCenter;
     loggedInUserDetails.numberOfLines = 0;
     [self.view addSubview:loggedInUserDetails];
     
+    // We keep an observer on loginInputValid property associated with JKLoginViewModel viewModel. This property will indicate view if user provided inputs are valid or not.
     [RACObserve(self.viewModel, loginInputValid) subscribeNext:^(id x) {
         loginButton.enabled = [x boolValue];
         loginButton.alpha = [x boolValue] ? 1.0 : 0.5;
     }];
     
+    // Bind the user provided inputs to viewModel properties.
     RAC(self, viewModel.firstName) = [firstNameField rac_textSignal];
     RAC(self, viewModel.lastName) = [lastNameField rac_textSignal];
     [[RACObserve(self.viewModel, loggedInUser) ignore:nil] subscribeNext:^(JKUser* x) {
@@ -79,6 +86,7 @@
     }];
     
     @weakify(self);
+    // A loading indicator - Indicates if API request is currently underway.
     [RACObserve(self.viewModel, userLoadingInProgress) subscribeNext:^(NSNumber* loading) {
         @strongify(self);
         if ([loading boolValue]) {

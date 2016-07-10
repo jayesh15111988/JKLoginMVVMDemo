@@ -13,14 +13,16 @@
 - (instancetype)initWithDictionary:(NSDictionary*)userDictionary {
     self = [super init];
     if (!self) { return nil; }
-    
+    // Properties associated with JKUser object.
     _firstName = userDictionary[@"first_name"];
     _lastName = userDictionary[@"last_name"];
+    _authToken = userDictionary[@"auth_token"];
     return self;
 }
 
+// Custom description for our JKUser object.
 - (NSString*)description {
-    return [NSString stringWithFormat:@"%@\n%@\n%@", self.firstName, self.lastName, @"2432sdad3123123ad323adada"];
+    return [NSString stringWithFormat:@"%@\n%@\n%@", self.firstName, self.lastName, self.authToken];
 }
 
 @end

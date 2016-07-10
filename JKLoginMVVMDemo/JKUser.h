@@ -12,6 +12,7 @@
 
 @property (nonatomic, copy, readonly) NSString* firstName;
 @property (nonatomic, copy, readonly) NSString* lastName;
+@property (nonatomic, copy, readonly) NSString* authToken;
 
 - (instancetype)initWithDictionary:(NSDictionary*)userDictionary;
 
